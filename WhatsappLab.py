@@ -7,8 +7,8 @@ from pywhatkit.core import core
 
 pg.FAILSAFE = False
 
-phone_no = "+393286369063"
-message = "ciao"
+phone_no = "insert phone number of the first chat on whatsapp"
+message = "Hi there, i'm using Whatsapp"
 wait_time = 15,
 tab_close = False,
 close_time = 3,
@@ -17,8 +17,10 @@ core.check_connection()
 
 web.open("https://web.whatsapp.com")
 time.sleep(5)
+
+""" click on the first chat to select it """
 pg.click(core.WIDTH / 7, core.HEIGHT / 3)
 
 for i in range(301):
-    k.write("Zazingra")
+    k.write(message)
     k.press("enter")
