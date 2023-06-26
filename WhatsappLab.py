@@ -9,6 +9,7 @@ pg.FAILSAFE = False
 
 phone_no = "insert phone number of the first chat on whatsapp"
 message = "Hi there, i'm using Whatsapp"
+N_of_messages = 100
 wait_time = 15,
 tab_close = False,
 close_time = 3,
@@ -21,6 +22,6 @@ time.sleep(5)
 """ click on the first chat to select it """
 pg.click(core.WIDTH / 7, core.HEIGHT / 3)
 
-for i in range(301):
+for i in range(N_of_messages):
     k.write(message)
     k.press("enter")
